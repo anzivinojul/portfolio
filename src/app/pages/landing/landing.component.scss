@@ -1,0 +1,49 @@
+@import '../../../assets/scss/master.scss';
+
+.container-landing {
+  width: 100%;
+  height: calc(100vh - 100px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .background-landing-left {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    background-color: $background;
+  }
+
+  .background-landing-right {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    left: 40%;
+    z-index: -100;
+    background-color: $white;
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 750px;
+    height: 490px;
+
+    .container-left {
+      background-color: $card;
+      width: 50%;
+    }
+
+    .container-right {
+      background-color: $white;
+      width: 50%;
+    }
+  }
+}

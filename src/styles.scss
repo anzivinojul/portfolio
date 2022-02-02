@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+// BASE
+
+@import './assets/scss/base/reset';
+@import './assets/scss/base/fonts';
+@import './assets/scss/base/breakpoints';
+@import './assets/scss/base/colors';
+@import './assets/scss/base/mixins';
+@import './assets/scss/base/functions';
+@import './assets/scss/base/body';
+@import './assets/scss/base/messages';
+
+// COMPONENTS
+
+@import './assets/scss/components/container';
+@import './assets/scss/components/buttons';
+@import './assets/scss/components/forms';
