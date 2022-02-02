@@ -1,10 +1,56 @@
 @import '../../../assets/scss/master.scss';
 
 .container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  height: 100px;
+  height: 128px;
   background-color: white;
   position: sticky;
   top: 0;
   z-index: 1;
+
+  .left-header {
+    display: flex;
+    align-items: center;
+    padding-left: space(4);
+
+    #img-header {
+      width: 60px;
+      height: 60px;
+    }
+
+    #name-header {
+      font-weight: 700;
+      font-size: 2em;
+      padding-left: space(4);
+      padding-right: space(8);
+    }
+
+    #job-header {
+      font-weight: 100;
+      font-size: 1.2em;
+    }
+  }
+
+  .right-header {
+    display: flex;
+    align-items: center;
+    gap: space(4);
+    min-width: auto;
+    padding-right: space(4);
+
+    a {
+      font-weight: 100;
+      font-size: 1.2em;
+      transition: .4s;
+
+      &:hover {
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+
+  }
 }

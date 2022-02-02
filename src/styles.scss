@@ -14,3 +14,13 @@
 @import './assets/scss/components/container';
 @import './assets/scss/components/buttons';
 @import './assets/scss/components/forms';
+
+
+//BODY
+body {
+  min-height: 100vh;
+  width: 100%;
+  color: $black;
+  font-family: $font;
+  font-weight: 600;
+}
