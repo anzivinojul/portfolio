@@ -29,7 +29,8 @@
     }
 
     #job-header {
-      font-weight: 100;
+      font-family: 'Poppins', 'sans-serif';
+      font-weight: 200;
       font-size: 1.2em;
     }
   }
@@ -42,12 +43,12 @@
     padding-right: space(4);
 
     a {
-      font-weight: 100;
+      font-family: 'Poppins', 'sans-serif';
+      font-weight: 200;
       font-size: 1.2em;
-      transition: .4s;
 
       &:hover {
-        font-weight: 700;
+        font-weight: 400;
         cursor: pointer;
       }
     }
