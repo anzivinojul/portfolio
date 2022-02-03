@@ -19,6 +19,10 @@
     #img-header {
       width: 60px;
       height: 60px;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     #name-header {
@@ -26,6 +30,10 @@
       font-size: 2em;
       padding-left: space(4);
       padding-right: space(8);
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     #job-header {

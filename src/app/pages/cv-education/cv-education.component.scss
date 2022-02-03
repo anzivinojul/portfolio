@@ -30,4 +30,48 @@
       z-index: -100;
       background-color: $background;
     }
+
+    .container-top {
+      min-width: 100%;
+      min-height: 30%;
+      display: flex;
+
+      .container-top-left {
+        min-width: 60%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        #CV-header {
+          font-size: 4em;
+          font-weight: 900;
+        }
+
+        #line-header {
+          width: 100px;
+          border-bottom: 2px solid $black;
+        }
+
+        #title-header {
+          font-size: 2em;
+          font-weight: 700;
+        }
+      }
+
+      .container-top-right {
+        min-width: 40%;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+
+        .btn {
+          margin-top: 6%;
+          padding: 0 space(5);
+        }
+
+      }
+
+    }
 }
