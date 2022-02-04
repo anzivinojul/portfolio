@@ -1,5 +1,6 @@
 <router-outlet></router-outlet>
 
-<app-header></app-header>
-<app-landing></app-landing>
+<app-header (goCV)="landing.goCV()"></app-header>
+<app-landing #landing></app-landing>
 <app-cv-education></app-cv-education>
+<app-cv-work-experience></app-cv-work-experience>

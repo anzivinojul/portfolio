@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { CvEducationComponent } from './pages/cv-education/cv-education.component';
 import { HeaderComponent } from './templates/header/header.component';
+import { CvWorkExperienceComponent } from './pages/cv-work-experience/cv-work-experience.component';
+import { CvSkillsComponent } from './pages/cv-skills/cv-skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     CvEducationComponent,
-    HeaderComponent
+    HeaderComponent,
+    CvWorkExperienceComponent,
+    CvSkillsComponent
   ],
   imports: [
     BrowserModule,

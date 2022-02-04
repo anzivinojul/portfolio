@@ -1,0 +1,27 @@
+@import '../../../assets/scss/master.scss';
+
+.container-cv-work-experience {
+  width: 100%;
+  min-height: calc(100vh - 128px);
+  position: relative;
+}
+
+.background-cv-work-experience-left {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  background-color: $white;
+}
+
+.background-cv-work-experience-right {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  left: 60%;
+  z-index: -100;
+  background-color: $background;
+}
