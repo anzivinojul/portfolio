@@ -34,8 +34,8 @@ export class HeaderComponent implements OnInit {
   }
 
   goProject(): void {
-    const cvWorkExperience = document.querySelector('.container-cv-work-experience');
-    const height = (cvWorkExperience.clientHeight + 128) * 3;
+    const cvWorkExperience = document.querySelector('.container-projects');
+    const height = (cvWorkExperience.clientHeight + 128) * 4;
 
     window.scrollTo(
       {

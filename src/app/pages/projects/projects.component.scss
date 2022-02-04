@@ -1,0 +1,124 @@
+@import '../../../assets/scss/master.scss';
+
+.background-top-white {
+  width: 100%;
+  height: 128px;
+  background-color: $white;
+}
+
+.container-projects {
+  width: 100%;
+  min-height: calc(100vh - 128px);
+  position: relative;
+
+  .background-projects-left {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    background-color: $background;
+  }
+
+  .background-projects-right {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    left: 40%;
+    z-index: -100;
+    background-color: $white;
+  }
+
+  .container-top {
+    width: 100%;
+    height: 200px;
+    min-height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: space(3);
+
+    .container-top-right {
+      min-width: 60%;
+      min-height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      #projects-header {
+        font-size: 4em;
+        font-weight: 900;
+      }
+    }
+  }
+
+  .container-cards {
+    display: flex;
+    flex-direction: column;
+    gap: space(3);
+    margin-left: 12%;
+    width: 68vw;
+    height: 50vh;
+    min-width: 880px;
+    min-height: 320px;
+
+    .container-card {
+      display: flex;
+      width: 100%;
+      height: 33.3%;
+
+      .container-card-left {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        background-color: $card;
+        color: $black;
+        font-size: 1.2em;
+
+        #logo-project {
+          width: 100px;
+          height: 100px;
+        }
+
+        .infos-project {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          gap: space(2);
+          width: 50%;
+          font-weight: 700;
+
+          #link-project {
+            font-size: 0.8em;
+            color: $blue;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .container-card-right {
+        display: flex;
+        align-items: center;
+        padding: 0 space(4);
+        width: 50%;
+        height: 100%;
+        background-color: $white;
+
+        #description {
+          font-weight: 400;
+          line-height: 1.5em;
+        }
+      }
+
+    }
+
+  }
+
+  .container-bottom {
+    width: 100%;
+    height: space(6);
+  }
+}
