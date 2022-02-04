@@ -1,5 +1,4 @@
-import { AfterViewInit, Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
-import { LandingComponent } from 'src/app/pages/landing/landing.component';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -11,19 +10,17 @@ export class HeaderComponent implements OnInit {
   constructor(
   ) { }
 
-  @ViewChild(LandingComponent) landingComponent: LandingComponent;
-
-  goLanding() {
+  goLanding(): void {
     window.scrollTo(
       {
         top: 0,
         left: 0,
         behavior: 'smooth'
       }
-    )
+    );
   }
 
-  goCV() {
+  goCV(): void {
     const landing = document.querySelector('.container-landing');
     const height = landing.clientHeight + 128;
 
@@ -33,12 +30,12 @@ export class HeaderComponent implements OnInit {
         left: 0,
         behavior: 'smooth'
       }
-    )
+    );
   }
 
-  goCV2() {
-    const cv_work_experience = document.querySelector('.container-cv-work-experience');
-    const height = (cv_work_experience.clientHeight + 128) * 3;
+  goProject(): void {
+    const cvWorkExperience = document.querySelector('.container-cv-work-experience');
+    const height = (cvWorkExperience.clientHeight + 128) * 3;
 
     window.scrollTo(
       {
@@ -46,7 +43,7 @@ export class HeaderComponent implements OnInit {
         left: 0,
         behavior: 'smooth'
       }
-    )
+    );
   }
 
   ngOnInit(): void {

@@ -34,30 +34,33 @@
     display: flex;
     justify-content: center;
     align-self: center;
-    width: 750px;
-    height: 490px;
+    width: 45vw;
+    height: 70vh;
+    min-width: 750px;
+    min-height: 490px;
 
     .container-hero-left {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
+      padding: space(3) 0;
       background-color: $card;
       width: 50%;
 
       #img-profile {
-        width: 150px;
-        height: 150px;
+        width: 220px;
+        height: 220px;
         border-radius: 180px;
       }
 
       #name-profile {
-        font-size: 2em;
+        font-size: 2.2em;
         font-weight: 700;
       }
 
       #line-profile {
-        width: 100px;
+        width: 80px;
         border-bottom: 2px solid $black;
       }
 
@@ -114,6 +117,7 @@
 
       .summary-profile {
         font-weight: 100;
+        font-size: 1.2em;
       }
     }
   }
