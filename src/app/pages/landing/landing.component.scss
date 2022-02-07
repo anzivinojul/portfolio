@@ -88,8 +88,8 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      margin-left: space(6);
-      margin-bottom: space(2);
+      padding-left: space(6);
+      padding-bottom: space(2);
       background-color: $white;
       width: 50%;
 
@@ -121,4 +121,137 @@
       }
     }
   }
+}
+
+@media screen and (max-width: $xl) {
+
+  .container-landing {
+
+    .container {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-self: center;
+      width: 40vw;
+      height: 75vh;
+      min-width: 300px;
+      min-height: 600px;
+
+      .container-hero-left {
+        flex-direction: column;
+        padding: space(2) 0;
+        width: 100%;
+        height: 50%;
+
+        #img-profile {
+          width: 140px;
+          height: 140px;
+        }
+
+        #name-profile {
+          font-size: 2.1em;
+        }
+
+        #job-profile {
+          font-size: 1.1em;
+        }
+
+        #linkedin-profile {
+          i {
+            font-size: 2.6em;
+          }
+
+        }
+      }
+
+      .container-hero-right {
+        align-items: center;
+        padding: space(2);
+        width: 100%;
+        height: 50%;
+
+        #hello-profile {
+          display: none;
+        }
+
+        #presentation-profile {
+          display: none;
+        }
+
+        .buttons-profile {
+          justify-content: center;
+          gap: space(2);
+          width: 100%;
+
+          .btn {
+            width: 130px;
+          }
+        }
+
+        .summary-profile {
+          text-align: center;
+          font-weight: 100;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: $l) {
+
+  .container-landing {
+
+    .container {
+      width: 45vw;
+      height: 75vh;
+
+      .container-hero-left {
+
+        #img-profile {
+          width: 140px;
+          height: 140px;
+          border-radius: 180px;
+        }
+
+        #name-profile {
+          font-size: 2em;
+        }
+
+        #job-profile {
+          font-size: 1em;
+        }
+
+        #linkedin-profile {
+          i {
+            font-size: 2.4em;
+          }
+        }
+      }
+
+      .container-hero-right {
+
+        .buttons-profile {
+          justify-content: center;
+          gap: space(2);
+          width: 100%;
+
+          .btn {
+            width: 130px;
+          }
+        }
+
+        .summary-profile {
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $s) {
+  .container-landing {
+    padding-right: 0px;
+  }
+
 }
