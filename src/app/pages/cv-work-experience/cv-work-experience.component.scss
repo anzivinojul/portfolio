@@ -27,21 +27,22 @@
 
   .container-top {
     width: 100%;
-    height: 200px;
+    min-width: 360px;
     min-height: 200px;
     display: flex;
     padding-bottom: space(3);
 
     .container-top-left {
-      min-width: 60%;
+      width: 60%;
       min-height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
+      padding: 0 space(2);
 
       #CV-header {
-        font-size: 4em;
+        font-size: 3.6em;
         font-weight: 900;
       }
 
@@ -51,8 +52,9 @@
       }
 
       #title-header {
-        font-size: 3em;
+        font-size: 2.6em;
         font-weight: 700;
+        text-align: center;
       }
     }
 
@@ -121,6 +123,165 @@
   .container-bottom {
     width: 100%;
     height: space(6);
+  }
+}
+
+@media screen and (max-width: $xl) {
+
+  .container-cv-work-experience {
+
+    .container-top {
+      min-height: 150px;
+
+      .container-top-left {
+
+        #CV-header {
+          font-size: 3em;
+        }
+
+        #title-header {
+          font-size: 2em;
+        }
+      }
+
+    }
+
+    .container-cards {
+      width: 80vw;
+      height: 60vh;
+      min-width: 340px;
+      min-height: 400px;
+
+      .container-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+
+        .container-card-left {
+          width: 100%;
+          height: 40%;
+          font-size: 1em;
+        }
+
+        .container-card-right {
+          width: 100%;
+          height: 60%;
+
+          #description {
+            text-align: center;
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: $l) {
+
+  .container-cv-work-experience {
+
+    .container-top {
+
+      .container-top-left {
+
+        #CV-header {
+          font-size: 2.8em;
+        }
+
+        #title-header {
+          font-size: 1.8em;
+        }
+      }
+
+    }
+  }
+
+}
+
+@media screen and (max-width: $m) {
+
+  .container-cv-work-experience {
+
+    .container-top {
+      min-height: 125px;
+
+
+      .container-top-left {
+
+        #CV-header {
+          font-size: 2.6em;
+        }
+
+        #title-header {
+          font-size: 1.6em;
+        }
+      }
+
+    }
+
+    .container-cards {
+      margin-left: 0px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      .container-card {
+        width: 80%;
+
+        .container-card-left {
+          font-size: 0.9em;
+        }
+
+        .container-card-right {
+
+          #description {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $s) {
+
+    .container-cv-work-experience {
+
+      .container-top {
+
+        .container-top-left {
+
+          #CV-header {
+            font-size: 2.3em;
+          }
+
+          #title-header {
+            font-size: 1.3em;
+          }
+        }
+
+      }
+
+      .container-cards {
+
+        .container-card {
+
+
+          .container-card-left {
+            font-size: 0.8em;
+          }
+
+          .container-card-right {
+
+            #description {
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
   }
 }
 
