@@ -157,7 +157,7 @@
 
         #linkedin-profile {
           i {
-            font-size: 2.6em;
+            font-size: 2.2em;
           }
 
         }
@@ -224,7 +224,7 @@
 
         #linkedin-profile {
           i {
-            font-size: 2.4em;
+            font-size: 2em;
           }
         }
       }
@@ -249,7 +249,7 @@
   }
 }
 
-@media screen and (max-width: $s) {
+@media screen and (max-width: $m) {
   .container-landing {
     padding-right: 0px;
   }

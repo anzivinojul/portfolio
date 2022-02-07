@@ -33,7 +33,6 @@
 
     .container-top {
       width: 100%;
-      height: 200px;
       min-height: 200px;
       display: flex;
       padding-bottom: space(3);
@@ -69,8 +68,12 @@
         justify-content: center;
 
         .btn {
-          margin-top: 6%;
+          margin-top: space(4);
           padding: 0 space(5);
+
+          .smallWidth-button-text {
+            display: none;
+          }
         }
 
       }
@@ -142,3 +145,163 @@
       height: space(6);
     }
 }
+
+@media screen and (max-width: $xl) {
+
+  .container-cv-education {
+
+    .container-top {
+      min-height: 175px;
+
+      .container-top-left {
+
+        #CV-header {
+          font-size: 3.6em;
+        }
+
+        #title-header {
+          font-size: 2.6em;
+        }
+      }
+
+    }
+
+    .container-cards {
+      width: 80vw;
+      height: 60vh;
+      min-width: 340px;
+      min-height: 400px;
+
+      .container-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+
+        .container-card-left {
+          width: 100%;
+          height: 40%;
+          font-size: 1em;
+        }
+
+        .container-card-right {
+          width: 100%;
+          height: 60%;
+
+          #description {
+            text-align: center;
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: $m) {
+
+  .container-cv-education {
+
+    .container-top {
+      min-height: 175px;
+
+
+      .container-top-left {
+
+        #CV-header {
+          font-size: 3.3em;
+        }
+
+        #title-header {
+          font-size: 2.3em;
+        }
+      }
+
+      .container-top-right {
+
+        .btn {
+          padding: 0 space(3);
+
+          .fullWidth-button-text {
+            display: none;
+          }
+
+          .smallWidth-button-text {
+            display: flex;
+            align-items: center;
+            gap: space(1);
+
+            i {
+              font-size: 1.2em;
+            }
+          }
+        }
+      }
+
+    }
+
+    .container-cards {
+      margin-left: 0px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      .container-card {
+        width: 80%;
+
+        .container-card-left {
+          font-size: 0.9em;
+        }
+
+        .container-card-right {
+
+          #description {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $s) {
+
+    .container-cv-education {
+
+      .container-top {
+        min-height: 150px;
+
+        .container-top-left {
+
+          #CV-header {
+            font-size: 2.5em;
+          }
+
+          #title-header {
+            font-size: 1.5em;
+          }
+        }
+
+      }
+
+      .container-cards {
+
+        .container-card {
+
+
+          .container-card-left {
+            font-size: 0.8em;
+          }
+
+          .container-card-right {
+
+            #description {
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
+  }
+}
+
