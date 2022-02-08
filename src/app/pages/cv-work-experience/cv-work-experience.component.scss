@@ -68,7 +68,7 @@
     width: 68vw;
     height: 50vh;
     min-width: 880px;
-    min-height: 320px;
+    min-height: 300px;
 
     .container-card {
       display: flex;
@@ -129,6 +129,7 @@
 @media screen and (max-width: $xl) {
 
   .container-cv-work-experience {
+    min-height: calc(100vh - 112px);
 
     .container-top {
       min-height: 175px;
@@ -182,6 +183,7 @@
 @media screen and (max-width: $l) {
 
   .container-cv-work-experience {
+    min-height: calc(100vh - 96px);
 
     .container-top {
 
@@ -204,6 +206,7 @@
 @media screen and (max-width: $m) {
 
   .container-cv-work-experience {
+    min-height: calc(100vh - 80px);
 
     .container-top {
       min-height: 150px;
@@ -249,6 +252,7 @@
 @media screen and (max-width: $s) {
 
     .container-cv-work-experience {
+      min-height: calc(100vh - 64px);
 
       .container-top {
 

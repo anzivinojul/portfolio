@@ -69,3 +69,27 @@
     }
   }
 }
+
+@media screen and (max-width: $xl) {
+  .container-contact {
+    padding: 112px;
+  }
+}
+
+@media screen and (max-width: $l) {
+  .container-contact {
+    padding: 96px;
+  }
+}
+
+@media screen and (max-width: $m) {
+  .container-contact {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: $s) {
+  .container-contact {
+    padding: 64px;
+  }
+}

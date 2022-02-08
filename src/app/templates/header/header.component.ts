@@ -21,8 +21,8 @@ export class HeaderComponent implements OnInit {
   }
 
   goCV(): void {
-    const landing = document.querySelector('.container-landing');
-    const height = landing.clientHeight + 128;
+    const cv_education = document.querySelector('.container-cv-education');
+    const height = (cv_education.getBoundingClientRect().top + window.scrollY) - 128;
 
     window.scrollTo(
       {
@@ -34,8 +34,8 @@ export class HeaderComponent implements OnInit {
   }
 
   goProject(): void {
-    const cvWorkExperience = document.querySelector('.container-projects');
-    const height = (cvWorkExperience.clientHeight * 4) + (128 * 2);
+    const project = document.querySelector('.container-projects');
+    const height = (project.getBoundingClientRect().top + window.scrollY) - 128;
 
     window.scrollTo(
       {
@@ -48,7 +48,7 @@ export class HeaderComponent implements OnInit {
 
   goContact(): void {
     const contact = document.querySelector('.container-contact');
-    const height = (contact.clientHeight * 5) + (128 * 2) ;
+    const height = (contact.getBoundingClientRect().top + window.scrollY);
 
     window.scrollTo(
       {

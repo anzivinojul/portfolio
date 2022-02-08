@@ -16,23 +16,28 @@
     align-items: center;
     padding-left: space(4);
 
-    #img-header {
-      width: 60px;
-      height: 60px;
+    .logo-name-header {
+      display: flex;
+      align-items: center;
 
-      &:hover {
-        cursor: pointer;
+      #img-header {
+        width: 60px;
+        height: 60px;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
-    }
 
-    #name-header {
-      font-weight: 700;
-      font-size: 2em;
-      padding-left: space(4);
-      padding-right: space(8);
+      #name-header {
+        font-weight: 700;
+        font-size: 2em;
+        padding-left: space(4);
+        padding-right: space(8);
 
-      &:hover {
-        cursor: pointer;
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
 
@@ -61,5 +66,108 @@
       }
     }
 
+  }
+}
+
+@media screen and (max-width: $xl) {
+  .container-header {
+    height: 112px;
+    justify-content: flex-start;
+
+    .left-header {
+      min-width: calc(100% - 32px);
+      justify-content: space-between;
+
+      .logo-name-header {
+
+        #name-header {
+          padding-right: 0;
+        }
+      }
+    }
+
+    .right-header {
+      display: none;
+    }
+  }
+
+}
+
+@media screen and (max-width: $l) {
+  .container-header {
+    height: 96px;
+
+    .left-header {
+
+      .logo-name-header {
+
+        #img-header {
+          width: 45px;
+          height: 45px;
+        }
+
+        #name-header {
+          font-size: 1.8em;
+        }
+      }
+
+      #job-header {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $m) {
+  .container-header {
+    height: 80px;
+
+    .left-header {
+      min-width: calc(100% - 16px);
+      padding-left: space(2);
+
+      .logo-name-header {
+
+        #img-header {
+          width: 40px;
+          height: 40px;
+        }
+
+        #name-header {
+          padding-left: space(2);
+          font-size: 1.4em;
+        }
+      }
+
+      #job-header {
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $s) {
+  .container-header {
+    height: 64px;
+    min-width: 350px;
+
+    .left-header {
+
+      .logo-name-header {
+
+        #img-header {
+          width: 32px;
+          height: 32px;
+        }
+
+        #name-header {
+          font-size: 1.1em;
+        }
+      }
+
+      #job-header {
+        font-size: 0.8em;
+      }
+    }
   }
 }

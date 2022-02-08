@@ -34,7 +34,7 @@
     .container-top {
       width: 100%;
       min-width: 360px;
-      min-height: 200px;
+      min-height: 175px;
       display: flex;
       padding-bottom: space(3);
 
@@ -91,7 +91,7 @@
       width: 68vw;
       height: 50vh;
       min-width: 880px;
-      min-height: 320px;
+      min-height: 300px;
 
       .container-card {
         display: flex;
@@ -151,7 +151,12 @@
 
 @media screen and (max-width: $xl) {
 
+  .background-top-white {
+    height: 112px;
+  }
+
   .container-cv-education {
+    min-height: calc(100vh - 112px);
 
     .container-top {
       min-height: 175px;
@@ -171,7 +176,7 @@
 
     .container-cards {
       width: 80vw;
-      height: 60vh;
+      height: 40vh;
       min-width: 340px;
       min-height: 400px;
 
@@ -204,7 +209,12 @@
 
 @media screen and (max-width: $l) {
 
+  .background-top-white {
+    height: 96px;
+  }
+
   .container-cv-education {
+    min-height: calc(100vh - 96px);
 
     .container-top {
 
@@ -226,7 +236,12 @@
 
 @media screen and (max-width: $m) {
 
+  .background-top-white {
+    height: 80px;
+  }
+
   .container-cv-education {
+    min-height: calc(100vh - 80px);
 
     .container-top {
       min-height: 150px;
@@ -292,7 +307,12 @@
 
 @media screen and (max-width: $s) {
 
+  .background-top-white {
+    height: 64px;
+  }
+
     .container-cv-education {
+      min-height: calc(100vh - 64px);
 
       .container-top {
 

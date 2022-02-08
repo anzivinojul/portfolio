@@ -42,7 +42,7 @@
     .container-hero-left {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       padding: space(3) 0;
       background-color: $card;
@@ -126,6 +126,7 @@
 @media screen and (max-width: $xl) {
 
   .container-landing {
+    min-height: calc(100vh - 112px);
 
     .container {
       flex-direction: column;
@@ -201,6 +202,7 @@
 @media screen and (max-width: $l) {
 
   .container-landing {
+    min-height: calc(100vh - 96px);
 
     .container {
       width: 45vw;
@@ -251,7 +253,14 @@
 
 @media screen and (max-width: $m) {
   .container-landing {
+    min-height: calc(100vh - 80px);
     padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: $s) {
+  .container-landing {
+    min-height: calc(100vh - 64px);
   }
 
 }

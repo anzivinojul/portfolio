@@ -33,8 +33,7 @@
 
   .container-top {
     width: 100%;
-    height: 200px;
-    min-height: 200px;
+    min-height: 150px;
     display: flex;
     justify-content: flex-end;
     padding-bottom: space(3);
@@ -59,11 +58,11 @@
     gap: space(3);
     margin-left: 12%;
     width: 68vw;
-    height: 50vh;
+    height: 40vh;
     min-width: 880px;
-    min-height: 320px;
+    min-height: 300px;
 
-    .container-card {
+    .container-card-fullwidth {
       display: flex;
       width: 100%;
       height: 33.3%;
@@ -79,8 +78,8 @@
         font-size: 1.2em;
 
         #logo-project {
-          width: 100px;
-          height: 100px;
+          width: auto;
+          height: 80%;
         }
 
         .infos-project {
@@ -115,10 +114,154 @@
 
     }
 
+    .container-card-smallwidth {
+      display: none;
+    }
+
   }
 
   .container-bottom {
     width: 100%;
     height: space(6);
+  }
+}
+
+@media screen and (max-width: $xl) {
+
+  .background-top-white {
+    height: 112px;
+  }
+
+  .container-projects {
+    min-height: calc(100vh - 112px);
+
+    .container-top {
+      min-height: 175px;
+
+      .container-top-right {
+
+        #projects-header {
+          font-size: 3em;
+        }
+
+      }
+
+    }
+
+    .container-cards {
+      width: 80vw;
+      height: 50vh;
+      min-width: 340px;
+      min-height: 300px;
+
+      .container-card-fullwidth {
+        display: none;
+      }
+
+      .container-card-smallwidth {
+        display: flex;
+        width: 100%;
+        height: 33.3%;
+        flex-direction: column;
+
+        .container-card-header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 20%;
+          background-color: $card;
+        }
+
+        .container-card-bottom {
+          display: flex;
+          width: 100%;
+          height: 80%;
+
+          .container-card-left {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+
+            #logo-project {
+              width: auto;
+              height: 80%;
+            }
+          }
+
+          .container-card-right {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $white;
+            padding: space(2) 0;
+            font-size: 1em;
+
+            #link-project {
+              color: $blue;
+              text-decoration: underline;
+              text-align: center;
+            }
+
+            #description {
+              text-align: center;
+              font-weight: 400;
+              line-height: 1em;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+}
+
+@media screen and (max-width: $l) {
+
+  .background-top-white {
+    height: 96px;
+  }
+
+  .container-projects {
+    min-height: calc(100vh - 96px);
+
+    .container-cards {
+
+      .container-card-smallwidth {
+
+        .container-card-bottom {
+
+          .container-card-right {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $m) {
+
+  .background-top-white {
+    height: 80px;
+  }
+
+  .container-projects {
+    min-height: calc(100vh - 80px);
+  }
+}
+
+@media screen and (max-width: $s) {
+
+  .background-top-white {
+    height: 64px;
+  }
+
+  .container-projects {
+    min-height: calc(100vh - 64px);
   }
 }
