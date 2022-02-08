@@ -11,9 +11,9 @@
       <h1 id="name-profile">Julien Anzivino</h1>
       <div id="line-profile"></div>
       <h3 id="job-profile">DEVELOPPEUR WEB</h3>
-      <div id="linkedin-profile">
+      <a id="linkedin-profile" href="https://www.linkedin.com/in/julien-anzivino-39469a1a0/" target="_blank">
         <i id="linkedin-profile" class="ri-linkedin-box-fill"></i>
-      </div>
+      </a>
 
     </div>
 
@@ -22,8 +22,8 @@
       <h1 id="hello-profile">Bonjour,</h1>
       <h4 id="presentation-profile">Je m'appelle Julien Anzivino</h4>
       <div class="buttons-profile">
-        <button class="btn">CV</button>
-        <button class="btn btn-border">PROJETS</button>
+        <button class="btn" (click)="goCV()">CV</button>
+        <button class="btn btn-border" (click)="goProject()">PROJETS</button>
       </div>
       <div class="summary-profile">
         Je suis un développeur informatique, plus précisément un développeur web.<br><br>
