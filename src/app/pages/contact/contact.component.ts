@@ -46,6 +46,7 @@ export class ContactComponent implements OnInit {
       formData.append("message", this.contactForm.get("message").value);
       this.isLoading = true;
       this.submitted = false;
+      this.invalidForm = false;
 
       this.http.post("https://script.google.com/macros/s/AKfycbx3DfS_3HxbsU2twcJ9lmz8timO1G9A1_TkGYmkJ4at4HC0w9-lcAzvPrmYPCd26SPg/exec", formData).subscribe(
         (response) => {
