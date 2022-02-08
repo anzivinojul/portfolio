@@ -1,32 +1,34 @@
 <div class="container-contact">
 
-  <div class="container-card" action="">
+  <div class="container-card">
 
-    <form class="container-form">
+    <form class="container-form" [formGroup]="contactForm" method="post" (ngSubmit)="onSubmit()" >
 
       <h2 id="contact-header">CONTACT</h2>
       <div class="names">
         <div class="firstname">
           <label for="firstname">Prénom *</label>
-          <input type="firstname" id="firstname">
+          <input type="firstname" id="firstname" [formControl]="firstname" required>
         </div>
         <div class="lastname">
           <label for="lastname">Nom *</label>
-          <input type="lastname" id="lastname">
+          <input type="lastname" id="lastname"[formControl]="lastname" required>
         </div>
       </div>
       <div class="email">
         <label for="email">Adresse mail *</label>
-        <input type="email" id="email">
+        <input type="email" id="email" [formControl]="email" required>
       </div>
       <div class="subject">
         <label for="subject">Sujet</label>
-        <input type="subject" id="subject">
+        <input type="subject" id="subject" [formControl]="subject">
       </div>
       <div class="message">
         <label for="message">Message</label>
-        <textarea type="message" id="message"></textarea>
+        <textarea type="message" id="message" [formControl]="message"></textarea>
       </div>
+
+      <input [formControl]="honeypot" class="hidden" type="text" />
 
       <div class="submit">
         <button type="submit" class="btn">Envoyer</button>
