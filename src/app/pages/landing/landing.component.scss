@@ -135,7 +135,7 @@
       width: 40vw;
       height: 75vh;
       min-width: 300px;
-      min-height: 600px;
+      min-height: 550px;
 
       .container-hero-left {
         flex-direction: column;
@@ -255,12 +255,93 @@
   .container-landing {
     min-height: calc(100vh - 80px);
     padding-right: 0px;
+
+    .container {
+
+      .container-hero-left {
+
+        #img-profile {
+          width: 120px;
+          height: 120px;
+        }
+
+        #name-profile {
+          font-size: 1.9em;
+        }
+
+        #job-profile {
+          font-size: 1em;
+        }
+
+        #linkedin-profile {
+          i {
+            font-size: 1.9em;
+          }
+        }
+      }
+
+      .container-hero-right {
+        padding: space(4) space(2);
+
+        .buttons-profile {
+
+          .btn {
+            width: 110px;
+            font-size: 0.9em;
+          }
+        }
+
+        .summary-profile {
+          font-size: 0.9em;
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: $s) {
   .container-landing {
     min-height: calc(100vh - 64px);
+
+    .container {
+
+      .container-hero-left {
+
+        #img-profile {
+          width: 100px;
+          height: 100px;
+        }
+
+        #name-profile {
+          font-size: 1.7em;
+        }
+
+        #job-profile {
+          font-size: 1em;
+        }
+
+        #linkedin-profile {
+          i {
+            font-size: 1.7em;
+          }
+        }
+      }
+
+      .container-hero-right {
+
+        .buttons-profile {
+
+          .btn {
+            width: 90px;
+            font-size: 0.8em;
+          }
+        }
+
+        .summary-profile {
+          font-size: 0.9em;
+        }
+      }
+    }
   }
 
 }

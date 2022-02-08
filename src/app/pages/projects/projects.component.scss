@@ -136,7 +136,6 @@
     min-height: calc(100vh - 112px);
 
     .container-top {
-      min-height: 175px;
 
       .container-top-right {
 
@@ -168,8 +167,9 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 20%;
+          min-height: auto;
           background-color: $card;
+          padding: space(1) 0;
         }
 
         .container-card-bottom {
@@ -198,17 +198,18 @@
             align-items: center;
             background-color: $white;
             padding: space(2) 0;
-            font-size: 1em;
 
             #link-project {
               color: $blue;
               text-decoration: underline;
               text-align: center;
+              font-size: 0.9em;
             }
 
             #description {
               text-align: center;
               font-weight: 400;
+              font-size: 1em;
               line-height: 1em;
             }
           }
@@ -229,6 +230,17 @@
   .container-projects {
     min-height: calc(100vh - 96px);
 
+    .container-top {
+
+      .container-top-right {
+
+        #projects-header {
+          font-size: 2.8em;
+        }
+
+      }
+    }
+
     .container-cards {
 
       .container-card-smallwidth {
@@ -236,7 +248,18 @@
         .container-card-bottom {
 
           .container-card-right {
-            font-size: 0.9em;
+
+            #link-project {
+              color: $blue;
+              text-decoration: underline;
+              text-align: center;
+            }
+
+            #description {
+              text-align: center;
+              font-weight: 400;
+              line-height: 1em;
+            }
           }
         }
       }
@@ -252,6 +275,37 @@
 
   .container-projects {
     min-height: calc(100vh - 80px);
+
+    .container-top {
+
+      .container-top-right {
+
+        #projects-header {
+          font-size: 2.6em;
+        }
+
+      }
+    }
+
+    .container-cards {
+
+      .container-card-smallwidth {
+
+        .container-card-bottom {
+
+          .container-card-right {
+
+            #link-project {
+              font-size: 0.8em;
+            }
+
+            #description {
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -263,5 +317,41 @@
 
   .container-projects {
     min-height: calc(100vh - 64px);
+
+    .container-top {
+
+      .container-top-right {
+
+        #projects-header {
+          font-size: 2.3em;
+        }
+
+      }
+    }
+
+    .container-cards {
+      margin-left: 0px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      .container-card-smallwidth {
+        width: 80%;
+
+        .container-card-bottom {
+
+          .container-card-right {
+
+            #link-project {
+              font-size: 0.7em;
+            }
+
+            #description {
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
+    }
   }
 }

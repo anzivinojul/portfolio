@@ -262,6 +262,7 @@
 
         .btn {
           padding: 0 space(3);
+          font-size: 0.9em;
 
           .fullWidth-button-text {
             display: none;
@@ -324,6 +325,13 @@
 
           #title-header {
             font-size: 1.3em;
+          }
+        }
+
+        .container-top-right {
+          .btn {
+            padding: 0 space(3);
+            font-size: 0.8em;
           }
         }
 
