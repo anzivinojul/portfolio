@@ -13,6 +13,8 @@ import { CvWorkExperienceComponent } from './pages/cv-work-experience/cv-work-ex
 import { CvSkillsComponent } from './pages/cv-skills/cv-skills.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { DownloadDirective } from './directive/download.directive';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     CvWorkExperienceComponent,
     CvSkillsComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    DownloadDirective,
   ],
   imports: [
     BrowserModule,

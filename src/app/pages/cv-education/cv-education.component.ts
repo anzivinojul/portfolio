@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var require: any;
+const FileSaver = require('file-saver');
+
 @Component({
   selector: 'app-cv-education',
   templateUrl: './cv-education.component.html',
@@ -8,6 +11,12 @@ import { Component, OnInit } from '@angular/core';
 export class CvEducationComponent implements OnInit {
 
   constructor() { }
+
+  downloadPDF() {
+    const pdfURL = './assets/files/CV_Julien_Anzivino.pdf';
+    const pdfName = 'CV Julien Anzivino';
+    FileSaver.saveAs(pdfURL, pdfName);
+  }
 
   ngOnInit(): void {
   }

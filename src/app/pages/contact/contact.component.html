@@ -28,10 +28,15 @@
         <textarea type="message" id="message" [formControl]="message"></textarea>
       </div>
 
-      <input [formControl]="honeypot" class="hidden" type="text" />
-
       <div class="submit">
-        <button type="submit" class="btn">Envoyer</button>
+        <button [disabled]="isLoading" type="submit" class="btn">Envoyer</button>
+        <p class="error" *ngIf="invalidForm">Veuillez renseigner l'ensemble des champs obligatoires.</p>
+        <div class="lds-ring" *ngIf="isLoading"><div></div><div></div><div></div><div></div></div>
+      </div>
+
+      <input [formControl]="honeypot" class="hidden" type="text" />
+      <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
+        <span>{{responseMessage}}</span>
       </div>
 
     </form>

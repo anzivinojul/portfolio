@@ -19,6 +19,8 @@
     "@angular/platform-browser": "~10.0.2",
     "@angular/platform-browser-dynamic": "~10.0.2",
     "@angular/router": "~10.0.2",
+    "@types/file-saver": "^2.0.5",
+    "file-saver": "^2.0.5",
     "remixicon": "^2.5.0",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",

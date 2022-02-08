@@ -13,12 +13,13 @@ export class ContactComponent implements OnInit {
   firstname: FormControl = new FormControl("", [Validators.required]);
   lastname: FormControl = new FormControl("", [Validators.required]);
   email: FormControl = new FormControl("", [Validators.required, Validators.email]);
-  subject: FormControl = new FormControl("", [Validators.required]);
-  message: FormControl = new FormControl("", [Validators.required, Validators.maxLength(1024)]);
+  subject: FormControl = new FormControl("");
+  message: FormControl = new FormControl("");
   honeypot: FormControl = new FormControl("");
   submitted: boolean = false;
   isLoading: boolean = false;
   responseMessage: string;
+  invalidForm: boolean = false;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -50,6 +51,7 @@ export class ContactComponent implements OnInit {
         (response) => {
           if(response["result"] == "success") {
             this.responseMessage = "Merci pour votre message ! Je vous recontacte au plus vite !";
+            this.contactForm.reset();
           }
           else {
             this.responseMessage = "Oops! Quelque chose s'est mal passé, réessayez plus tard.";
@@ -67,6 +69,10 @@ export class ContactComponent implements OnInit {
           console.log(error);
         }
       )
+    }
+
+    else if (this.contactForm.invalid) {
+      this.invalidForm = true;
     }
   }
 
