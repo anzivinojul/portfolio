@@ -9,9 +9,16 @@ export class LandingComponent implements OnInit {
 
   constructor() { }
 
+  getNavbarHeight(): number {
+    const header = document.querySelector('.container-header');
+    const height = (header.clientHeight);
+
+    return height
+  }
+
   goCV(): void {
     const cv_education = document.querySelector('.container-cv-education');
-    const height = (cv_education.getBoundingClientRect().top + window.scrollY) - 128;
+    const height = (cv_education.getBoundingClientRect().top + window.scrollY) - this.getNavbarHeight();
 
     window.scrollTo(
       {
@@ -24,7 +31,7 @@ export class LandingComponent implements OnInit {
 
   goProject(): void {
     const project = document.querySelector('.container-projects');
-    const height = (project.getBoundingClientRect().top + window.scrollY) - 128;
+    const height = (project.getBoundingClientRect().top + window.scrollY) - this.getNavbarHeight();
 
     window.scrollTo(
       {

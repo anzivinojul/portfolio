@@ -69,19 +69,26 @@
         font-weight: 100;
       }
 
-      #linkedin-profile {
-        color: $black;
+      .icons-profile {
+        display: flex;
+        justify-content: center;
+        gap: space(2);
 
-        i {
-          font-weight: 700;
-          font-size: 2.8em;
-          transition: .4s;
+        a {
+
+          i {
+            color: $black;
+            font-weight: 700;
+            font-size: 2.8em;
+            transition: .4s;
+
+            &:hover {
+              color: lighten($black, 25%);
+              cursor: pointer;
+            }
+          }
         }
 
-        &:hover {
-          color: lighten($black, 25%);
-          cursor: pointer;
-        }
       }
 
     }
@@ -158,8 +165,8 @@
           font-size: 1.1em;
         }
 
-        #linkedin-profile {
-          i {
+        .icons-profile {
+          a i {
             font-size: 2.2em;
           }
 
@@ -193,7 +200,7 @@
         .summary-profile {
           text-align: center;
           font-weight: 100;
-          font-size: 1.2em;
+          font-size: 1.1em;
         }
       }
     }
@@ -226,8 +233,8 @@
           font-size: 1em;
         }
 
-        #linkedin-profile {
-          i {
+        .icons-profile {
+          a i {
             font-size: 2em;
           }
         }
@@ -275,8 +282,8 @@
           font-size: 1em;
         }
 
-        #linkedin-profile {
-          i {
+        .icons-profile {
+          a i {
             font-size: 1.9em;
           }
         }
@@ -322,8 +329,9 @@
           font-size: 1em;
         }
 
-        #linkedin-profile {
-          i {
+        .icons-profile {
+
+          a i {
             font-size: 1.7em;
           }
         }

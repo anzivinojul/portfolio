@@ -1,13 +1,13 @@
 label {
   font-size: .9em;
   display: block;
-  margin-bottom: space(1);
+  margin-bottom: space(0.2);
 }
 
 input {
   display: block;
   width: 100%;
-  height: 40px;
+  height: 38px;
   padding: space(1);
   border: transparent;
   border-bottom: 1px solid $black;
@@ -18,7 +18,7 @@ input {
   font-family: $font;
   font-weight: 400;
   font-size: .9em;
-  margin-bottom: space(2);
+  margin-bottom: space(1);
 
   &:focus {
     border-bottom: 2px solid lighten($black, 10%);
@@ -67,7 +67,7 @@ textarea {
   font-family: $font;
   font-weight: 400;
   font-size: .9em;
-  margin-bottom: space(2);
+  margin-bottom: space(1);
 
   &:focus {
     border-bottom: 2px solid lighten($black, 10%);

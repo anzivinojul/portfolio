@@ -30,14 +30,14 @@
 
       <div class="submit">
         <button [disabled]="isLoading" type="submit" class="btn">Envoyer</button>
+        <div [ngClass]="!submitted? 'hidden' : 'visible'" class="success">
+          <span>{{responseMessage}}</span>
+        </div>
         <p class="error" *ngIf="invalidForm">Veuillez renseigner l'ensemble des champs obligatoires.</p>
         <div class="lds-ring" *ngIf="isLoading"><div></div><div></div><div></div><div></div></div>
       </div>
 
       <input [formControl]="honeypot" class="hidden" type="text" />
-      <div [ngClass]="!submitted? 'hidden' : 'visible'" class="success">
-        <span>{{responseMessage}}</span>
-      </div>
 
     </form>
 
