@@ -13,7 +13,7 @@ export class CvEducationComponent implements OnInit {
   constructor() { }
 
   downloadPDF() {
-    const pdfURL = './assets/files/CV_Julien_Anzivino.pdf';
+    const pdfURL = './assets/files/CV Julien Anzivino.pdf';
     const pdfName = 'CV Julien Anzivino';
     FileSaver.saveAs(pdfURL, pdfName);
   }
