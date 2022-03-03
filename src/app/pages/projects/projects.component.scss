@@ -288,8 +288,13 @@
     }
 
     .container-cards {
+      margin-left: 0px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
 
       .container-card-smallwidth {
+        width: 80%;
 
         .container-card-bottom {
 
@@ -330,10 +335,6 @@
     }
 
     .container-cards {
-      margin-left: 0px;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
 
       .container-card-smallwidth {
         width: 80%;
